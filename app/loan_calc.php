@@ -4,7 +4,7 @@ $amount = $_REQUEST['amount'] ?? null;
 $interest = $_REQUEST['interest'] ?? null;
 $years = $_REQUEST['years'] ?? null;
 $result = null;
-$error = null;
+$messages = null;
 
 if (isset($_REQUEST['calculate'])) {
     if (is_numeric($amount) && is_numeric($interest) && is_numeric($years) && $amount > 0 && $interest >= 0 && $years > 0) {
@@ -18,7 +18,7 @@ if (isset($_REQUEST['calculate'])) {
             $result = round($amount / $months, 2);
         }
     } else {
-        $error = "Podaj poprawne wartości liczbowe!";
+        $messages = "Podaj poprawne wartości liczbowe!";
     }
 }
 

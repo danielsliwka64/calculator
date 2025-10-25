@@ -30,8 +30,8 @@
         <button type="submit" name="calculate">Oblicz ratę</button>
     </form>
 
-    <?php if ($error): ?>
-        <p class="error"><?= $error ?></p>
+    <?php if ($messages): ?>
+        <p class="error"><?= $messages ?></p>
     <?php endif; ?>
 
     <?php if ($result !== null): ?>
