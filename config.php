@@ -11,4 +11,4 @@ function out(&$param) {
         echo htmlspecialchars($param);
     }
 }
-?>
+?>  

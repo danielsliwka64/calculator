@@ -17,6 +17,12 @@
 <body>
 <div class="container">
     <h2>Kalkulator kredytowy</h2>
+    <div style="text-align:center; margin-bottom:15px;">
+        <a href="<?= _APP_ROOT ?>/app/security/logout.php" 
+        style="padding: 8px 15px; background:#c33; color:white; border-radius:5px; text-decoration:none;">
+        Wyloguj
+        </a>
+    </div>
     <form method="request" action="">
         <label>Kwota kredytu (PLN):</label>
         <input type="number" name="amount" step="0.01" value="<?= htmlspecialchars($amount ?? '') ?>" required>
